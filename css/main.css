@@ -1,0 +1,43 @@
+.left-ear {
+  transition: all .5s linear;
+}
+
+.right-ear {
+  transition: all .5s linear;
+}
+
+.bear:hover .left-ear {
+  transform: translateY(-10px);
+}
+
+.bear:hover .right-ear {
+  transform: translateY(-10px);
+}
+
+.left-eye, .right-eye {
+  animation: slide 3s linear infinite;
+}
+
+@keyframes slide {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(12px);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+
+  75% {
+    transform: translate(-12px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+
+}
